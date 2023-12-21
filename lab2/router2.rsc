@@ -1,4 +1,4 @@
-# 12/20/2023 17:12:50 by RouterOS 7.6
+# dec/20/2023 17:12:50 by RouterOS 7.6
 # software id = IFQG-KPKP
 #
 /interface bridge
