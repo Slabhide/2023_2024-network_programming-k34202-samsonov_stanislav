@@ -48,4 +48,5 @@ Date of finished: 2023 <br/>
 
 
 ## Вывод: 
+![9](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/9.png)
    Ansible мощный инструмент для множественного конфигурирования устройств и сбора информации с устройств.
