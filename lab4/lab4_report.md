@@ -15,7 +15,11 @@ Date of finished: 2023 <br/>
 ### Клонирование репозитория
 Был склонирован репозиторий p4lang/tutorials. Были установлены Vagrant и VirtualBox. 
 Был выполнен переход в папку vm-ubuntu-20.04. Создана виртуальная машина с помощью команды vagrant up.
+
+
 ![1](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/1.png)
+
+
 ![2](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/2.png)
 ### Implementing Basic Forwarding
 В данном задании нужно было дополнить скрипт basic.p4, чтобы в сети заработала переадресация IP-пакетов.
