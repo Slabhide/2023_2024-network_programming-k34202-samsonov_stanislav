@@ -124,5 +124,5 @@ ansible-playbook -i inventory serial_number-playbook.yml
 ![13](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/13.png)
 ![14](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/14.png)
 ### Вывод:
-
+![15](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/15.png)
 В результате выполнения работы c помощью Ansible и Netbox была собрана вся возможную информацию об устройствах и сохранена в отдельном файле.
