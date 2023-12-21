@@ -28,12 +28,12 @@ sudo pip3 install ansible
 
 Образ скачивается с сайта https://mikrotik.com/download из раздела **Cloud Hosted Router** в формате **vdi**. В VirtualBox при создании машины указывается тип - Other, версия Other/Unknown (64-bit), а в качестве хранилища указывается ранее скаченный файл в формате *.vdi*. В настройке ВМ в одном из адаптеров указывается тип подключения: *Сетевой мост*, тип адаптера *Intel PRO/1000 MT Desktop (82540EM)*, неразборчивый режим - *Разрешить всё* и обновляется MAC-адрес.
   
- После запуска в качестве логина вводится *admin* и задается новый пароль. На этом предварительная настройка завершена.
- [2]
+После запуска в качестве логина вводится *admin* и задается новый пароль. На этом предварительная настройка завершена.
+![2](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/2.png)
 Далее был определен ip-адрес Microtic для работы с WinBox.
-[4]
+![4](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/4.png)
 В WinBox подключаемся к адресу для дальнейшей настройки
-[5]
+![5](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/5.png)
 ### 3. Поднятие VPN туннеля.
 Создаем OpenVPN сервер на облачной виртуальной машине.
 ```
@@ -42,27 +42,27 @@ wget https://as-repository.openvpn.net/as-repo-public.asc -qO /etc/apt/trusted.g
 echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] http://as-repository.openvpn.net/as/debian jammy main">/etc/apt/sources.list.d/openvpn-as-repo.list
 apt update && apt -y install openvpn-as
 ```
-[6]
+![6](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/6.png)
 Для того чтобы создать клиента и изменить конфигурацию OpenVPN-сервера, был использован Admin UI (https://<публичный ip>:943/admin).
-[7]
+![7](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/6.png)
 В настройках VPN отключаем TLS.
-[8]
+![8](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/8.png)
 В User Permitions создаем нового пользователя и разрешаем автоматический вход.
-[9]
+![9](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/9.png)
 Во вкладке User Profiles нажимаем New Profile и начинается загрузка .ovpn файла.
-[10]
+![10](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/10.png)
 Подробный статус о настроенном сервере
-[11]
+![11](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/11.png)
 
 ### 4. Подключение CHR.
 
 Был выполнен переход в WinBox в Files и добвлен скаченный файл конфигурации.
 Через терминал импортируем сертификаты из файла, используя команду <code>certificate import file-name=*название_файла*</code>.
-[13]
+![13](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/13.png)
 Далее был создан новый интерфейс.
-[12]
+![12](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/12.png)
 После чего была выполнена проверка
-[14]
+![14](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/14.png)
 
 
 ### Вывод: в ходе выполнения лабораторной работы был получен базовый опыт настройки VPN, используя OpenVPN, и работы с облачным провайдером на примере YandexCloud.
