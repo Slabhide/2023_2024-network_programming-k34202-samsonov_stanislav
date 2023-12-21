@@ -27,6 +27,8 @@ Date of finished: 2023 <br/>
 Был выполнен вход под учетной записью p4/p4.
 
 Была выполнена команда make run, а затем проверена доступность узлов.
+
+
 ![3](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/3.png)
 Был обновлен парсер, который позволяет заполнять заголовки ethernet_t, ipv4_t.
 
@@ -99,7 +101,11 @@ control MyDeparser(packet_out packet, in headers hdr) {
 }
 ```
 Была выполнена проверка скрипта.
+
+
 ![4](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/4.png)
+
+
 ![5](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/5.png)
 ### Implementing Basic Tunneling
 Был изменен файл basic_tunnel.p4: 
@@ -175,12 +181,26 @@ control MyDeparser(packet_out packet, in headers hdr) {
 }
 ```
 Была проверена локальная связность.
+
+
 ![6](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/6.png)
+
+
 Была выполнена проверка скрипта, с h1 был оправлен пакет на h2 без туннелирования.
+
+
 ![7](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/7.png)
+
+
 Был отправлен пакет с h1 на h2 с туннелированием.
+
+
 ![8](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/8.png)
+
+
 ![9](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/9.png)
+
+
 ### Вывод
 
 В результате выполнения работы был изучен синтаксис языка программирования P4 и выполнены 2 обучающих задания от Open network foundation для ознакомления на практике с P4.
