@@ -15,15 +15,15 @@ Date of finished: 2023 <br/>
 ### Клонирование репозитория
 Был склонирован репозиторий p4lang/tutorials. Были установлены Vagrant и VirtualBox. 
 Был выполнен переход в папку vm-ubuntu-20.04. Создана виртуальная машина с помощью команды vagrant up.
-![1]
-![2]
+![1](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/1.png)
+![2](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/2.png)
 ### Implementing Basic Forwarding
 В данном задании нужно было дополнить скрипт basic.p4, чтобы в сети заработала переадресация IP-пакетов.
 
 Был выполнен вход под учетной записью p4/p4.
 
 Была выполнена команда make run, а затем проверена доступность узлов.
-![3]
+![3](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/3.png)
 Был обновлен парсер, который позволяет заполнять заголовки ethernet_t, ipv4_t.
 
 ```
@@ -95,8 +95,8 @@ control MyDeparser(packet_out packet, in headers hdr) {
 }
 ```
 Была выполнена проверка скрипта.
-![4]
-![5]
+![4](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/4.png)
+![5](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/5.png)
 ### Implementing Basic Tunneling
 Был изменен файл basic_tunnel.p4: 
 Был обновлен парсер myParser, а именно, добавлена функция заполненения заголовка myTunnel.
@@ -171,12 +171,12 @@ control MyDeparser(packet_out packet, in headers hdr) {
 }
 ```
 Была проверена локальная связность.
-![6]
+![6](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/6.png)
 Была выполнена проверка скрипта, с h1 был оправлен пакет на h2 без туннелирования.
-![7]
+![7](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/7.png)
 Был отправлен пакет с h1 на h2 с туннелированием.
-![8]
-![9]
+![8](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/8.png)
+![9](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab4/pictures/9.png)
 ### Вывод
 
 В результате выполнения работы был изучен синтаксис языка программирования P4 и выполнены 2 обучающих задания от Open network foundation для ознакомления на практике с P4.
