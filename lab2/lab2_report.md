@@ -13,7 +13,7 @@ Date of finished: 2023 <br/>
 С помощью Ansible настроить несколько сетевых устройств и собрать информацию о них. Правильно собрать файл Inventory.
 ## Ход работы:
    
-   ### 1. Установка второго CHR###
+   ### 1. Установка второго CHR
    
 Была создана виртуальная машина CHR_2 на VirtualBox. Был получен IP-адрес ВМ.
 ![1](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/1.png)
