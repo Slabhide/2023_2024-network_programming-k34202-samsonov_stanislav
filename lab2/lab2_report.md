@@ -16,7 +16,7 @@ Date of finished: 2023 <br/>
    ### 1. Установка второго CHR###
    
 Была создана виртуальная машина CHR_2 на VirtualBox. Был получен IP-адрес ВМ.
-![1]
+![1](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/1.png)
       
    ### 2. Настройка CHR-машин с помощью Ansible
 
@@ -25,26 +25,26 @@ Date of finished: 2023 <br/>
       ```
       ansible-inventory --list -y
       ```
-      ![2]
+![2](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/2.png)
 Произведена проверка подключения.
    
       ```
       ansible all -m ping
       ```
-      ![3]
+![3](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/3.png)
     
 С помощью Ansible был создан пользователm user на роутерах. 
-![4]
-![5]
+![4](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/4.png)
+![5](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/5.png)
       
 На роутерах был настроен NTP-клиент
-![6]
+![6](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/6.png)
    
 Был настроен OSPF с помощью Ansible. В разделе Neighbor в Winbox была выполнена проверка правильности настройки OSPF.
-![7]
+![7](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/7.png)
 
 Конфигурации роутеров были сохранены в файлах router.rsc, router2.rsc.
-![8]
+![8](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab2/pictures/8.png)
 
 
 ## Вывод: 
