@@ -4,7 +4,7 @@ Course: [Network programming](https://github.com/itmo-ict-faculty/network-progra
 Year: 2023/2024 <br/>
 Group: K34202 <br/>
 Author: Samsonov Stanislav <br/>
-Lab: Lab1 <br/>
+Lab: Lab2 <br/>
 Date of create: 2023 <br/>
 Date of finished: 2023 <br/>
 
