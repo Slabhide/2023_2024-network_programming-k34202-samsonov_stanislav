@@ -21,7 +21,7 @@ sudo apt update
 sudo apt install python3-pip
 sudo pip3 install ansible
 ```
-[3]
+[3](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab1/pictures/3.png)
 Приготовления к настройке завершены.
 
 ### 2. Установка CHR в VirtualBox
