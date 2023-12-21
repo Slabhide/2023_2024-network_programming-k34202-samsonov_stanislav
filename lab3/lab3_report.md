@@ -15,7 +15,7 @@ Date of finished: 2023 <br/>
 #### 1. Устанавливаем Netbox
 Сначала установим postgresql и подключимся к нему. 
 Также создадим базу данных с помощью команд 
-![1]
+![1](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/1.png)
 Был установлен Redis.
 ```
 sudo apt install -y redis-server
@@ -24,33 +24,33 @@ sudo apt install -y redis-server
 ```
 sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev
 ```
-[4]
+![4](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/4.png)
 Был склонирован репозиторий с NetBox:
-[2]
+![2](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/2.png)
 Далее был добавлен пользователь.
-[3]
+![3](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/3.png)
 Был сгенерирован секретный ключ с помощью библиотеки python
-[5]
+![5](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/5.png)
 В каталоге конфигурации NetBox создана копия configuration_example.py с именем configuration.py. Этот файл будет содержать все локальные параметры конфигурации.Был отредактирован файл configuration.py
-![6]
+![6](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/6.png)
 Далее был создан суперпользователь.
-![7]
+![7](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/7.png)
 Был запущен NetBox:
 ```
 python3 manage.py runserver 0.0.0.0:8000 --insecure
 ```
-[8]
+![8](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/8.png)
 ### 2. Заполнение информации о CHR в Netbox.
 Создан сайт, мануфактура и роль. Созданы 2 роутера.
-[9]
+![9](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/9.png)
 Также получен токен
-[11]
+![11](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/11.png)
 ### 3. Сбор данных из Netbox используя Ansible.
 Установлены ansible-модули для Netbox:
 ```
 ansible-galaxy collection install netbox.netbox
 ```
-[10]
+![10](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/10.png)
 Создан файл netbox_conf_galaxy.yml:
 ```
 plugin: netbox.netbox.nb_inventory
@@ -121,8 +121,8 @@ ansible-inventory -v --list -y -i netbox_conf_galaxy.yml > netbox_inventory.yml
 ansible-playbook -i inventory serial_number-playbook.yml
 ```
 Добавленные серийные номера:
-![13]
-![14]
+![13](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/13.png)
+![14](https://github.com/Slabhide/2023_2024-network_programming-k34202-samsonov_stanislav/blob/main/lab3/pictures/14.png)
 ### Вывод:
 
 В результате выполнения работы c помощью Ansible и Netbox была собрана вся возможную информацию об устройствах и сохранена в отдельном файле.
