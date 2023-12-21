@@ -1,0 +1,6 @@
+plugin: netbox.netbox.nb_inventory
+api_endpoint: http://127.0.0.1:8000
+token: 1rg8135rr424h628bdad25ty37e4ed531d37bf88d
+validate_certs: True
+config_context: False
+interfaces: True
